@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/home/alumno/GIT_COPIA/SHIT/PMDM_C#/ConsoleApp2/ConsoleApp2.csproj": {}
+    "/home/alumno/SHIT/PMDM_C#/Introduccion_C#/ConsoleApp2/ConsoleApp2.csproj": {}
   },
   "projects": {
-    "/home/alumno/GIT_COPIA/SHIT/PMDM_C#/ConsoleApp2/ConsoleApp2.csproj": {
+    "/home/alumno/SHIT/PMDM_C#/Introduccion_C#/ConsoleApp2/ConsoleApp2.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/alumno/GIT_COPIA/SHIT/PMDM_C#/ConsoleApp2/ConsoleApp2.csproj",
+        "projectUniqueName": "/home/alumno/SHIT/PMDM_C#/Introduccion_C#/ConsoleApp2/ConsoleApp2.csproj",
         "projectName": "ConsoleApp2",
-        "projectPath": "/home/alumno/GIT_COPIA/SHIT/PMDM_C#/ConsoleApp2/ConsoleApp2.csproj",
+        "projectPath": "/home/alumno/SHIT/PMDM_C#/Introduccion_C#/ConsoleApp2/ConsoleApp2.csproj",
         "packagesPath": "/home/alumno/.nuget/packages/",
-        "outputPath": "/home/alumno/GIT_COPIA/SHIT/PMDM_C#/ConsoleApp2/obj/",
+        "outputPath": "/home/alumno/SHIT/PMDM_C#/Introduccion_C#/ConsoleApp2/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/home/alumno/.nuget/NuGet/NuGet.Config"

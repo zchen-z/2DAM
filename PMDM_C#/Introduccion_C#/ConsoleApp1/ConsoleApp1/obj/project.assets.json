@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/home/alumno/GIT_COPIA/SHIT/PMDM_C#/ConsoleApp1/ConsoleApp1/ConsoleApp1.csproj",
+      "projectUniqueName": "/home/alumno/SHIT/PMDM_C#/Introduccion_C#/ConsoleApp1/ConsoleApp1/ConsoleApp1.csproj",
       "projectName": "ConsoleApp1",
-      "projectPath": "/home/alumno/GIT_COPIA/SHIT/PMDM_C#/ConsoleApp1/ConsoleApp1/ConsoleApp1.csproj",
+      "projectPath": "/home/alumno/SHIT/PMDM_C#/Introduccion_C#/ConsoleApp1/ConsoleApp1/ConsoleApp1.csproj",
       "packagesPath": "/home/alumno/.nuget/packages/",
-      "outputPath": "/home/alumno/GIT_COPIA/SHIT/PMDM_C#/ConsoleApp1/ConsoleApp1/obj/",
+      "outputPath": "/home/alumno/SHIT/PMDM_C#/Introduccion_C#/ConsoleApp1/ConsoleApp1/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/home/alumno/.nuget/NuGet/NuGet.Config"
