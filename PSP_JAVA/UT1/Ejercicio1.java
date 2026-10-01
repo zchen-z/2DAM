@@ -5,22 +5,35 @@ import java.io.IOException;
 public class Ejercicio1 {
 
     public static void main(String[] args) {
-        // 1. Configuramos el comando de Linux para abrir la calculadora
-        // Nota: En Ubuntu/Debian suele ser "gnome-calculator"
-        ProcessBuilder pb = new ProcessBuilder("kcalc"); 
+        ProcessBuilder pbCalc = new ProcessBuilder("kcalc");
 
         try {
-            System.out.println("Abriendo la calculadora en Linux...");
+            System.out.println("Abriendo la calculadora KCalc...");
+            Process procesoCalc = pbCalc.start();
+            System.out.println("KCalc lanzada. El programa esperará a que la cierres...");
             
-            // 2. Arrancamos el proceso
-            Process proceso = pb.start();
-            
-            System.out.println("¡Proceso lanzado con éxito!");
+            procesoCalc.waitFor(); 
+            System.out.println("Calculadora cerrada.\n");
 
         } catch (IOException e) {
-            System.err.println("Error al intentar abrir la calculadora: " + e.getMessage());
-            System.err.println("Asegúrate de que 'gnome-calculator' está instalado o cambia el comando.");
+            System.err.println("Error al intentar abrir KCalc: " + e.getMessage());
+        } catch (InterruptedException e) {
+            System.err.println("El proceso de la calculadora fue interrumpido.");
+            Thread.currentThread().interrupt();
         }
+
+        ProcessBuilder pbEditor = new ProcessBuilder("kate");
+
+        try {
+            System.out.println("Abriendo editor kate");
+            Process procesoEditor = pbEditor.start();
+            System.out.println("Kate lanzada. ");
+        } catch (Exception e) {
+            System.err.println("Error al intentar abrir el editor de textos: " + e.getMessage());
+
+        }
+
+        
     }
 }
 

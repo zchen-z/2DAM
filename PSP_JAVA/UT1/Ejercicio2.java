@@ -20,7 +20,7 @@ public class Ejercicio2 {
             
             System.out.println("El programa va a dormir. Abre la terminal y ejecuta los comandos indicados en la reflexión...");
             
-            Thread.sleep(30000); 
+            Thread.sleep(10000); 
             
             System.out.println("El programa ha terminado de ejecutarse correctamente.");
             
