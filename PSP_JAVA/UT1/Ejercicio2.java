@@ -4,7 +4,7 @@ import java.io.IOException;
 
 public class Ejercicio2 {
     public static void main(String[] args) {
-          String[] comando = {"open", "-a", "kcalc"};
+          String[] comando = {"kcalc"};
         
         ProcessBuilder pb = new ProcessBuilder(comando);
         
