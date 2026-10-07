@@ -1,0 +1,25 @@
+# Java / Maven
+*.class
+target/
+
+# C# / .NET
+bin/
+obj/
+.vs/
+*.user
+
+# Python
+venv/
+.venv/
+__pycache__/
+*.pyc
+
+# Claves privadas (nunca subirlas)
+*_privada.pem
+*private*.pem
+*.key
+
+# Sistema / editores
+.DS_Store
+Thumbs.db
+.idea/
