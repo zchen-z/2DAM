@@ -1,0 +1,29 @@
+PROYECTO PSP · COMUNICACIÓN ENTRE PROCESOS
+==========================================
+
+CÓMO ABRIRLO EN INTELLIJ
+1. Descomprime el zip.
+2. En IntelliJ: File > Open... y selecciona la carpeta PSP_Comunicacion_Alumnos (la que contiene este fichero).
+3. Si aparece el aviso "Project JDK is not defined" o "Setup SDK", pulsa en él y elige
+   tu JDK (versión 11 o superior).
+
+ESTRUCTURA
+  src/PSP/   Clases de los ejercicios (paquete PSP)
+  datos/     Ficheros de datos: notas.csv (ejercicio 11) y texto.txt (ejercicios 5 y 13)
+  bin/       Se crea al compilar. NO cambies esta carpeta.
+
+IMPORTANTE
+- El proyecto está configurado para compilar en la carpeta bin. Los ejercicios que lanzan
+  otro programa Java (9, 10, 14 y 15) usan "java -cp bin PSP.HijoXxx", así que funcionan
+  ejecutándolos directamente desde IntelliJ.
+- IntelliJ ejecuta los programas desde la raíz del proyecto, así que las rutas
+  "datos/notas.csv" y "datos/texto.txt" funcionan tal cual.
+- Para los ejercicios que reciben argumentos (args), edita la configuración de ejecución:
+  Run > Edit Configurations... > Program arguments.
+  Ya hay una preparada para el ejercicio 5: "Ejercicio05 (gato datos/texto.txt)".
+- Los ejercicios que piden datos por teclado (Scanner) se responden en la consola de IntelliJ.
+
+DESDE LA TERMINAL (alternativa)
+  cd PSP_Comunicacion_Alumnos
+  javac -d bin src/PSP/*.java
+  java -cp bin PSP.Ejercicio01
