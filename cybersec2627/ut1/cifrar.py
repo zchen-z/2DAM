@@ -4,7 +4,7 @@ from pathlib import Path
 
 OAEP = padding.OAEP(mgf=padding.MGF1(hashes.SHA256()), algorithm=hashes.SHA256(), label=None)
 
-publica_luis = serialization.load_pem_public_key(Path("Yo_publica.pem").read_bytes())
+publica_luis = serialization.load_pem_public_key(Path("Y_publica.pem").read_bytes())
 cifrado = publica_luis.encrypt(b"Me voy a dormir", OAEP)
 Path("mensaje.bin").write_bytes(cifrado)
 
