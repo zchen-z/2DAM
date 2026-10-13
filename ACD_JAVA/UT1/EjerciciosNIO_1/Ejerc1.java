@@ -6,43 +6,26 @@ import java.util.Scanner;
 
 public class Ejerc1 {
     public static void main(String[] args) throws IOException {
-        try (Scanner sc = new Scanner(System.in)) {
-            System.out.println("Ruta del fichero: ");
-            String entrada = sc.nextLine();
-            
-            Path ruta = Paths.get(entrada);
-            
-            if (Files.notExists(ruta)) {
-                Files.createFile(ruta);
-                System.out.println("Se acaba de crear");
-            } else {
-                System.out.println("Ya existe este archivo");
-            }
-            
-            System.out.println("Nombre: " + ruta.getFileName());
-            System.out.println("Direcctorio padre: " + ruta.getParent());
-            
-            if (Files.isRegularFile(ruta)) {
+        Scanner sc = new Scanner(System.in);
+
+        System.out.println("Ruta de fichero: ");
+        Path ruta1 = Paths.get(sc.nextLine());
+
+
+        System.out.println("Nombre del fichero: ");
+        System.out.println(ruta1.getFileName());
+        System.out.println(ruta1.toAbsolutePath().getParent());
+
+        if(Files.exists(ruta1)){
+            System.out.println("La ruta existe");
+            if(Files.isRegularFile(ruta1)){
                 System.out.println("Es un fichero");
-            } else if (Files.isDirectory(ruta)) {
+                System.out.println("Tamaño: " + Files.size(ruta1) + "bytes");
+            }else if(Files.isDirectory(ruta1)){
                 System.out.println("Es un directorio");
-            } else {
-                System.out.println("La ruta no existe o es un tipo especial");
             }
-            
-            if (Files.isRegularFile(ruta)) {
-                try {
-                    long bytes = Files.size(ruta);
-                    
-                    System.out.println("El fichero existe.");
-                    System.out.println("Tamaño: " + bytes + " bytes");
-                    
-                } catch (IOException e) {
-                    System.out.println("Error al leer el tamaño del archivo: " + e.getMessage());
-                }
-            } else {
-                System.out.println("La ruta no existe o no es un fichero válido.");
-            }
+        }else{
+            System.out.println("La ruta no existe");
         }
     }
 }
