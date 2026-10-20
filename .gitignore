@@ -24,3 +24,5 @@ __pycache__/
 Thumbs.db
 .idea/
 cybersec2627/clone/cybersec2627/
+bin/
+obj/
