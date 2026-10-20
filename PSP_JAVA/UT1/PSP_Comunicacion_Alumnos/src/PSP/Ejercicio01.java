@@ -1,8 +1,6 @@
 package PSP;
 
-import java.io.BufferedReader;
 import java.io.IOException;
-import java.io.InputStreamReader;
 
 /**
  * Ejercicio 1. Eco
@@ -12,6 +10,8 @@ public class Ejercicio01 {
 
     public static void main(String[] args) throws IOException, InterruptedException {
         System.out.println("Hola ");
+
+
 
     }
 }
