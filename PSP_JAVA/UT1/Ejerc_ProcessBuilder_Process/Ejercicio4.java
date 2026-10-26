@@ -4,33 +4,26 @@ import java.io.IOException;
 
 public class Ejercicio4 {
     public static void main(String[] args) {
-        String[] comando = {"mkdir", "pruebas"};
-        
-        System.out.println("Comando a ejecutar: " + String.join(" ", comando));
-        
-        ProcessBuilder pb = new ProcessBuilder(comando);
-        
+        ProcessBuilder pb = new ProcessBuilder("cmd", "/c", "mkdir", "pruebas");
+
         try {
-            Process proceso = pb.start();
-            
-            System.out.println("Esperando a que el comando 'mkdir' finalice...");
-            int codigoSalida = proceso.waitFor();
-            
-            System.out.println("Código de salida del proceso: " + codigoSalida);
-            
-            if (codigoSalida == 0) {
-                System.out.println("Resultado: Carpeta creada");
-            } else {
-                System.out.println("Resultado: Error al crear la carpeta");
+            System.out.println("Lanzando: " + pb.command());
+            Process p = pb.start();
+
+            int codigo = p.waitFor();
+            System.out.println("Codigo de salida " + codigo);
+
+            if (codigo == 0){
+                System.out.println("Carpeta creada");
+            }else{
+                System.out.println("Error al crear la carpeta");
             }
-            
         } catch (IOException e) {
-            System.err.println("ERROR I/O: Ocurrió un fallo al intentar ejecutar el comando del sistema.");
-            e.printStackTrace();
+            System.out.println("No se pudo lanzar el comando: " + e.getMessage());
         } catch (InterruptedException e) {
-            System.err.println("ERROR: El programa fue interrumpido abruptamente mientras esperaba.");
-            e.printStackTrace();
+            System.out.println("La espera fue interrumpida");
+        }
         }
     }
-}
+
 
