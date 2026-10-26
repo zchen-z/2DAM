@@ -71,7 +71,7 @@ public class SumManager {
                 if (orden == null) {
                     seguir = false;
                 } else if (!orden.isEmpty()) {
-                    // Reparto por turnos: 0, 1, 2... y vuelta a empezar.
+                    // Un reparto por turnos: 0, 1, 2... y luego vuelve a empezar.
                     int pos = turno % numWorkers;
                     turno++;
 

@@ -13,7 +13,7 @@ public class SumWorker {
 
         try {
             while (seguir) {
-                // readLine() se queda esperando hasta que el gestor manda una orden.
+                // El readLine() se queda esperando hasta que el gestor manda una orden.
                 // Si devuelve null es que el gestor ha cerrado la tubería.
                 String linea = br.readLine();
 

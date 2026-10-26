@@ -16,8 +16,8 @@ public class Worker {
     private boolean caido = false;
 
     public Worker() throws IOException {
-        // Usamos la misma JVM y el mismo classpath que el gestor, así funciona
-        // igual desde IntelliJ que desde la terminal.
+        // Aqui usamos la misma JVM y el mismo classpath que el gestor, así funciona
+        // igual desde el IDE que la terminal.
         String java = System.getProperty("java.home") + File.separator + "bin" + File.separator + "java";
         String classpath = System.getProperty("java.class.path");
 
