@@ -1,0 +1,12 @@
+PRÁCTICA UT1 - Gestor de procesos trabajadores
+
+Clases:
+  SumManager   -> el proceso gestor (también modo lote)
+  Worker       -> guarda un worker lanzado y sus flujos
+  SumWorker    -> el proceso trabajador
+  Operaciones  -> sumar, multiplicar, factorial y primo
+
+Cómo ejecutarlo desde la terminal (dentro de esta carpeta):
+  javac -d bin src/PSP/*.java
+  java -cp bin PSP.SumManager 3
+  java -cp bin PSP.SumManager 3 ordenes.txt
