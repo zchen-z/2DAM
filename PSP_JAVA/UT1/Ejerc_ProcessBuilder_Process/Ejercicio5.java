@@ -31,6 +31,8 @@ public class Ejercicio5 {
             System.out.println("La espera fue interrumpida");
         }
 
+        sc.close();
+
         
     }
 }
